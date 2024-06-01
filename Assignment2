@@ -1,0 +1,175 @@
+Assignment 2
+
+1. List the directory contents date wise sorted. ( man ls)
+
+command:
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~/cdac/cdac Assignment/OS_temp$ ls -t
+file1.txt  temp1  temp2  temp3  OS_Assignment
+
+2. List the directory contents size wise sorted.(man ls)
+
+command:
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~/cdac/cdac Assignment/OS_temp$ ls -S
+OS_Assignment  file1.txt  temp1  temp2  temp3
+
+3. List directory contents along with their inode no. (man ls)
+
+command:
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~/cdac/cdac Assignment/OS_temp$ ls -i
+1049060 file1.txt      1054975 temp1  1055031 temp3
+1054397 OS_Assignment  1055029 temp2
+
+4. List the contents of the subdirectory.
+
+command:
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~/cdac/cdac Assignment/OS_temp$ ls -R
+.:
+file1.txt  OS_Assignment  temp1  temp2  temp3
+
+./OS_Assignment:
+Assignment1  file1.txt  temp
+
+./OS_Assignment/temp:
+file1.txt
+
+5. Create a file, write your surname and name in it and
+save.
+i. now open the same file and add your address in it and
+save.
+ii. reopen the same file and check your name and address in
+it.
+
+command:
+
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~/cdac/cdac Assignment/OS_temp$ cat > myfile.txt
+bhide ketan
+
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~/cdac/cdac Assignment/OS_temp$ cat >> myfile.txt
+18/695 shahu nagar,bhone mal, Ichalkarnji
+
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~/cdac/cdac Assignment/OS_temp$ cat < myfile.txt
+bhide ketan
+18/695 shahu nagar,bhone mal, Ichalkarnji
+
+6. how to change the time stamp of file (man touch)
+
+command:
+
+Before:
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~/cdac/cdac Assignment/OS_temp$ ls -l  myfile.txt 
+-rw-rw-r-- 1 shri shri 59 May 31 22:38 myfile.txt
+
+
+After:
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~/cdac/cdac Assignment/OS_temp$ touch -t 202408041200.00 myfile.txt
+
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~/cdac/cdac Assignment/OS_temp$ ls -l  myfile.txt 
+-rw-rw-r-- 1 shri shri 59 Aug  4  2024 myfile.txt
+
+7. Create directory structure : Give following commands ,
+mkdir one
+cd one
+touch 1.txt 11.txt 111.txt
+mkdir two
+cd two
+touch 2.txt 22.txt 222.txt
+mkdir three
+cd three
+touch 3.txt 33.txt 333.txt
+mkdir four
+cd four
+touch 4.txt 44.txt 444.txt
+mkdir five
+cd five
+touch 5.txt 55.txt 555.txt
+
+
+8. Considering above directory structure , Do following
+operations :
+
+i. list the directory contents of directory named
+"five" from current directory (i.e. home directory).
+
+command:
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~$ ls /home/shri/cdac/cdac\ Assignment/one/two/three/four/five
+555.txt  55.txt  5.txt
+
+
+
+ii. write your name in a file named "44.txt" of
+directory "four" from current directory.
+
+command:
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~$ cat > /home/shri/cdac/cdac\ Assignment/one/two/three/four/44.txt
+shrishial bhagat
+
+iii. remove the file named "555.txt" from directory
+"five" from current directory.
+
+command:
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~/cdac/cdac Assignment/OS_temp/one/two/three/four/five$ rm 555.txt
+
+iv. change directory to five ( i.e. cd one/two/three/four/five/ ).
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~/cdac/cdac Assignment/OS_temp$ cd one/two/three/four/five
+
+
+v. write your course name in file named "3.txt" which
+resides in directory "three" from current directory (i.e.
+five).also read the same file.
+
+command:
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~/cdac/cdac Assignment/OS_temp/one/two/three/four/five$ cat > ../../3.txt
+DAC
+
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~/cdac/cdac Assignment/OS_temp/one/two/three/four/five$ cat < ../../3.txt
+DAC
+
+vi. list the contents of directory "two" from current
+directory (i.e. five).
+
+command:
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~/cdac/cdac Assignment/OS_temp/one/two/three/four/five$ ls ../../../
+222.txt  22.txt  2.txt  three
+
+
+vii. remove file named "222.txt" which belongs to
+directory "two" from current directory (i.e. five)
+
+command:
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~/cdac/cdac Assignment/OS_temp/one/two/three/four/five$ rm ../../../222.txt
+
+ix. remove all files only from directory named "five"
+from current directory (i.e. one)
+
+command:
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~/cdac/cdac Assignment/OS_temp/one$ rm -R two/three/four/five
+
+
+x. remove directory named "five" from current directory
+(i.e. one)
+
+command:
+
+
+xi. remove whole directory named "four" from current
+directory (i.e. one)
+
+command:
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~/cdac/cdac Assignment/OS_temp/one$ rm -R two/three/four
+
+
+xii. change to your home directory.
+
+command:
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~/cdac/cdac Assignment/OS_temp/one$ cd ~
+
+
+
+9. change the time stamp of file named "3.txt" which resides
+in directory named "three".(man touch)
+
+command:
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~$ touch -t 202402031000.00 /home/shri/cdac/cdac\ Assignment/OS_temp/one/two/three/3.txt
+
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~$ ls /home/shri/cdac/cdac\ Assignment/OS_temp/one/two/three/3.txt -l
+-rw-rw-r-- 1 shri shri 4 Feb  3 10:00 '/home/shri/cdac/cdac Assignment/OS_temp/one/two/three/3.txt'
