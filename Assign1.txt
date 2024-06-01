@@ -1,0 +1,391 @@
+
+Q2.
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/Assign01_OS$ uname
+Linux
+
+
+
+***************************************************************************
+Q3.
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/Assign01_OS$ pwd
+/home/sunbeam/Desktop/Assign01_OS
+
+
+
+***************************************************************************
+
+
+Q4.
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/Assign01_OS$ hostname
+sunbeam-Inspiron-15-3511
+
+*************************************************************************** 
+
+Q5.
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/Assign01_OS$ date
+Friday 31 May 2024 05:48:11 PM IST
+
+
+***************************************************************************
+  
+Q6.
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/Assign01_OS$ cal
+      May 2024        
+Su Mo Tu We Th Fr Sa  
+          1  2  3  4  
+ 5  6  7  8  9 10 11  
+12 13 14 15 16 17 18  
+19 20 21 22 23 24 25  
+26 27 28 29 30 31   
+
+
+**************************************************************************
+
+Q7.
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/Assign01_OS$ ls
+Assign1.txt
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/Assign01_OS$ dir
+Assign1.txt
+
+
+**************************************************************************
+
+Q8.
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/Assign01_OS$ cat > /home/sunbeam/Desktop/Assign01_OS/OS.txt
+
+
+**************************************************************************
+
+Q9.
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/Assign01_OS$ cat >> /home/sunbeam/Desktop/Assign01_OS/OS.txt 
+OS MODULE by NILESH GHULE sir 
+
+
+
+**************************************************************************
+
+
+
+Q10.
+
+i  =  sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/Assign01_OS$ cp /home/sunbeam/Desktop/Assign01_OS/OS.txt /home/sunbeam/Desktop/support/
+
+ii = sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/Assign01_OS$ cp -r /home/sunbeam/Desktop/Assign01_OS/ /home/sunbeam/Desktop/support/
+
+
+
+**************************************************************************
+
+
+Q11.
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/Assign01_OS$ mv /home/sunbeam/Desktop/Assign01_OS/Eightees.txt /home/sunbeam/Desktop/support/
+
+
+
+**************************************************************************
+Q12.
+
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/Assign01_OS$ mv /home/sunbeam/Desktop/support/Eightees.txt /home/sunbeam/Desktop/support/goodOldDays.txt
+
+
+*************************************************************************
+
+Q13.
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/Assign01_OS$ tac /home/sunbeam/Desktop/support/goodOldDays.txt
+.
+OS MODULE by NILESH GHULE sir 
+
+
+*************************************************************************
+
+Q14.
+
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/Assign01_OS$ tac /home/sunbeam/Desktop/support/goodOldDays.txt
+.
+OS MODULE by NILESH GHULE sir 
+
+
+************************************************************************
+
+Q15.
+
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/Assign01_OS$ mkdir /home/sunbeam/Desktop/support/Contact/
+
+
+************************************************************************
+
+
+Q16.
+sunbeam@sunbeam-Inspiron-15-3511:~$ cd Videos
+sunbeam@sunbeam-Inspiron-15-3511:~/Videos$ 
+
+
+************************************************************************
+
+
+
+
+Q17.
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/support$ rm /home/sunbeam/Desktop/support/Contact.txt
+
+
+
+************************************************************************
+
+
+
+
+Q18.
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/support$ rmdir /home/sunbeam/Desktop/support/goodOldDays.txt
+
+
+
+
+
+***********************************************************************
+
+
+
+
+
+Q19.
+
+i.  sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/support$ ls -l /home/sunbeam/Desktop/support/PGDESD.txt DAC.txt
+-rw-rw-r-- 1 sunbeam sunbeam 0 May 31 21:26 DAC.txt
+-rw-rw-r-- 1 sunbeam sunbeam 0 May 31 21:26 /home/sunbeam/Desktop/support/PGDESD.txt
+
+
+ii.  sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/support$ touch /home/sunbeam/Desktop/support/PGDESD.txt DAC.txt  
+
+
+****************************************************************************
+Q20.
+Before Sort :
+1
+9
+8
+7
+6
+5
+7
+5
+7
+8
+7
+2
+2
+6
+7
+1
+.
+
+
+After Sort : 
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/support$ sort Letters.txt 
+.
+1
+1
+2
+2
+5
+5
+6
+6
+7
+7
+7
+7
+7
+8
+8
+9
+
+******************************************************************************
+Q21.
+
+Before Uniq
+1
+1
+1
+2
+3
+9
+A
+A
+L
+T
+Y
+W
+W
+R
+R
+R
+Q
+Q
+
+
+After Uniq
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/support$ uniq Letters.txt 
+1
+2
+3
+9
+A
+L
+T
+Y
+W
+R
+Q
+
+******************************************************************************
+
+
+
+Q22.
+
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/support$ head Letters.txt
+1
+1
+1
+2
+3
+9
+A
+A
+L
+T
+
+******************************************************************************
+
+
+Q23.
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/support$ tail Letters.txt
+T
+Y
+W
+W
+R
+R
+R
+Q
+Q
+
+
+******************************************************************************
+
+
+
+Q24.
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/support$ factor 987
+987: 3 7 47
+
+
+******************************************************************************
+
+
+
+
+Q25.
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/support$ alias H=history
+
+
+******************************************************************************
+
+
+
+Q26.
+
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/support$ unalias H
+
+
+******************************************************************************
+
+Q27.
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/support$ echo $SHELL
+/bin/bash
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/support$ echo $LESSOPEN
+| /usr/bin/lesspipe %s
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/support$ echo $PATH
+/home/sunbeam/.nvm/versions/node/v20.12.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/support$ echo $SESSION_MANAGER
+local/sunbeam-Inspiron-15-3511:@/tmp/.ICE-unix/1567,unix/sunbeam-Inspiron-15-3511:/tmp/.ICE-unix/1567
+
+
+
+******************************************************************************
+
+Q28.
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/support$ ps
+    PID TTY          TIME CMD
+  41737 pts/0    00:00:00 bash
+  43880 pts/0    00:00:00 ps
+
+
+******************************************************************************
+
+
+Q29.
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/support$ kill PID TTY
+bash: kill: PID: arguments must be process or job IDs
+bash: kill: TTY: arguments must be process or job IDs
+
+
+******************************************************************************
+
+Q30.
+sunbeam@sunbeam-Inspiron-15-3511:~/Desktop/support$ env
+SHELL=/bin/bash
+SESSION_MANAGER=local/sunbeam-Inspiron-15-3511:@/tmp/.ICE-unix/1567,unix/sunbeam-Inspiron-15-3511:/tmp/.ICE-unix/1567
+QT_ACCESSIBILITY=1
+COLORTERM=truecolor
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+SSH_AGENT_LAUNCHER=gnome-keyring
+NVM_INC=/home/sunbeam/.nvm/versions/node/v20.12.2/include/node
+XDG_MENU_PREFIX=gnome-
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+LANGUAGE=en_IN:en
+GNOME_SHELL_SESSION_MODE=ubuntu
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+XMODIFIERS=@im=ibus
+DESKTOP_SESSION=ubuntu
+GTK_MODULES=gail:atk-bridge
+DBUS_STARTER_BUS_TYPE=session
+PWD=/home/sunbeam/Desktop/support
+LOGNAME=sunbeam
+XDG_SESSION_DESKTOP=ubuntu
+XDG_SESSION_TYPE=wayland
+SYSTEMD_EXEC_PID=1567
+XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.QS3MO2
+HOME=/home/sunbeam
+USERNAME=sunbeam
+IM_CONFIG_PHASE=1
+LANG=en_IN
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+XDG_CURRENT_DESKTOP=ubuntu:GNOME
+VTE_VERSION=6800
+WAYLAND_DISPLAY=wayland-0
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/ed8e8f37_f305_4e88_8b76_7df0135f562e
+NVM_DIR=/home/sunbeam/.nvm
+GNOME_SETUP_DISPLAY=:1
+LESSCLOSE=/usr/bin/lesspipe %s %s
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=sunbeam
+GNOME_TERMINAL_SERVICE=:1.256
+DISPLAY=:0
+SHLVL=1
+NVM_CD_FLAGS=
+QT_IM_MODULE=ibus
+DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=b11e31f27bcb38bdc7f07d4b6659fe9f
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+PATH=/home/sunbeam/.nvm/versions/node/v20.12.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+GDMSESSION=ubuntu
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=b11e31f27bcb38bdc7f07d4b6659fe9f
+NVM_BIN=/home/sunbeam/.nvm/versions/node/v20.12.2/bin
+_=/usr/bin/env
+
+
+
