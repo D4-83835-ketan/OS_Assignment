@@ -1,0 +1,59 @@
+que 1
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~$ wc data.txt
+  6  25 144 data.txt
+
+que 2
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~$ grep "files" data.txt
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+que 3
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~$ grep "file" data.txt
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+que 4
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~$ grep -v "files" data.txt 
+Linux is open source
+In Linux everything is file
+
+que 5
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~$ grep "have" data.txt
+files have permissions.
+files have inode no.
+files have size.
+
+que 6
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~$ grep -e "^f" data.txt
+files have permissions.
+files have inode no.
+files have size.
+
+que 7
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~$ egrep "\.$" data.txt
+files have permissions.
+files have inode no.
+files have size.
+
+que 8
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~$ head -2 data.txt
+Linux is open source
+In Linux everything is file
+
+que 9
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~$ tail -3 data.txt
+files have inode no.
+files have size.
+there are several types of files
+
+que 10
+sunbeam@sunbeam-Lenovo-ideapad-300-15ISK:~$ head -5 data.txt|tail -3
+files have permissions.
+files have inode no.
+files have size.
+
